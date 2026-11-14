@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Layout FlexBox 1</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Mengatur seluruh halaman */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container utama */
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+
+        /* Bagian Nav */
+        .nav {
+            width: 25%;
+            background-color: pink;
+            padding: 15px;
+        }
+
+        /* Bagian kanan */
+        .content {
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        .header {
+            height: 12%;
+            background-color: khaki;
+            padding: 15px;
+        }
+
+        /* Bagian Article dan Aside */
+        .main {
+            display: flex;
+            flex: 1;
+            min-height: 0;
+        }
+
+        /* Article */
+        .article {
+            width: 75%;
+            background-color: white;
+            padding: 15px;
+        }
+
+        /* Aside */
+        .aside {
+            width: 25%;
+            background-color: cyan;
+            padding: 15px;
+        }
+
+        /* Footer */
+        .footer {
+            height: 12%;
+            background-color: khaki;
+            padding: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Nav -->
+        <div class="nav">
+            Nav
+        </div>
+
+        <!-- Bagian Konten -->
+        <div class="content">
+
+            <!-- Header -->
+            <div class="header">
+                Header
+            </div>
+
+            <!-- Article dan Aside -->
+            <div class="main">
+
+                <div class="article">
+                    Article
+                </div>
+
+                <div class="aside">
+                    Aside
+                </div>
+
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                Footer
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

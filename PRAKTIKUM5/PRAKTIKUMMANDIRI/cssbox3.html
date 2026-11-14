@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Box 3</title>
+
+    <style>
+
+        /* Pengaturan halaman */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        /* Container utama */
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            padding: 20px;
+
+            display: grid;
+
+            grid-template-columns: 18% 58% 1fr;
+            grid-template-rows: 75px 1fr 65px;
+
+            gap: 12px;
+
+            grid-template-areas:
+                "kuning oranye oranye"
+                "hijau abu biru"
+                "footer footer footer";
+        }
+
+        /* Kotak kuning */
+        .kuning {
+            grid-area: kuning;
+            background-color: yellow;
+            border: 2px solid grey;
+        }
+
+        /* Kotak oranye */
+        .oranye {
+            grid-area: oranye;
+            background-color: red;
+            border: 2px solid #555;
+        }
+
+        /* Kotak hijau */
+        .hijau {
+            grid-area: hijau;
+            background-color: rgb(73, 224, 98);
+            border: 2px solid #555;
+        }
+
+        /* Kotak abu-abu */
+        .abu {
+            grid-area: abu;
+            background-color: grey;
+            border: 2px solid #555;
+        }
+
+        /* Kotak biru sebelah kanan */
+        .biru {
+            grid-area: biru;
+            background-color: rgb(155, 218, 252);
+            border: 2px solid #555;
+        }
+
+        /* Kotak biru bagian bawah */
+        .footer {
+            grid-area: footer;
+            background-color: blue;
+            border: 2px solid #555;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Kotak Kuning -->
+        <div class="kuning"></div>
+
+        <!-- Kotak Oranye -->
+        <div class="oranye"></div>
+
+        <!-- Kotak Hijau -->
+        <div class="hijau"></div>
+
+        <!-- Kotak Abu-abu -->
+        <div class="abu"></div>
+
+        <!-- Kotak Biru Kanan -->
+        <div class="biru"></div>
+
+        <!-- Kotak Biru Bawah -->
+        <div class="footer"></div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Box 2</title>
+
+    <style>
+
+        /* Mengatur seluruh halaman */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        /* Tempat seluruh kotak */
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            padding: 20px;
+            display: grid;
+
+            grid-template-columns: 20% 1fr;
+            grid-template-rows: 1fr 2fr 2fr;
+
+            gap: 20px;
+        }
+
+        /* Kotak hijau bagian atas */
+        .hijau {
+            background-color: #77f466;
+            grid-column: 1 / 3;
+        }
+
+        /* Kotak kuning */
+        .kuning {
+            background-color: yellow;
+        }
+
+        /* Kotak oranye */
+        .oranye {
+            background-color: red;
+        }
+
+        /* Kotak biru */
+        .biru {
+            background-color: #6fdeed;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Kotak Hijau -->
+        <div class="hijau"></div>
+
+        <!-- Kotak Kuning Pertama -->
+        <div class="kuning"></div>
+
+        <!-- Kotak Oranye -->
+        <div class="oranye"></div>
+
+        <!-- Kotak Kuning Kedua -->
+        <div class="kuning"></div>
+
+        <!-- Kotak Biru -->
+        <div class="biru"></div>
+
+    </div>
+
+</body>
+
+</html>

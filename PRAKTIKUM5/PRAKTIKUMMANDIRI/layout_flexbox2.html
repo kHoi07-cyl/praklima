@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Layout FlexBox 2</title>
+
+    <style>
+
+        /* Mengatur seluruh halaman */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Container utama */
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100vh;
+            background-color: pink;
+            padding: 15px;
+            gap: 12px;
+        }
+
+        /* Header */
+        .header {
+            height: 12%;
+            background-color: #83c9c2;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Bagian tengah */
+        .main {
+            display: flex;
+            flex: 1;
+            min-height: 0;
+            gap: 12px;
+        }
+
+        /* Aside */
+        .aside {
+            width: 30%;
+            background-color: #64b5b4;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Article */
+        .article {
+            flex: 1;
+            background-color: #f4777d;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 15px;
+            color: white;
+            min-width: 0;
+        }
+
+        /* Judul Article */
+        .article-title {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Bagian Image */
+        .images {
+            display: flex;
+            gap: 10px;
+        }
+
+        .image {
+            flex: 1;
+            height: 100px;
+            background-color: #dddddd;
+            color: #555555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Footer */
+        .footer {
+            height: 12%;
+            background-color: #83c9c2;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+            Header
+        </div>
+
+        <!-- Bagian Tengah -->
+        <div class="main">
+
+            <!-- Aside -->
+            <div class="aside">
+                Aside
+            </div>
+
+            <!-- Article -->
+            <div class="article">
+
+                <div class="article-title">
+                    Article
+                </div>
+
+                <!-- Tiga Kotak Image -->
+                <div class="images">
+
+                    <div class="image">
+                        Image
+                    </div>
+
+                    <div class="image">
+                        Image
+                    </div>
+
+                    <div class="image">
+                        Image
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            Footer
+        </div>
+
+    </div>
+
+</body>
+</html>
